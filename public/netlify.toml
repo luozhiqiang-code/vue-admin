@@ -4,5 +4,5 @@
   to = "http://39.105.131.75:3004/api/"
   status = 200
   force = true # COMMENT: ensure that we always redirect
-  headers = {X-From = "Netlify",Host=$host, X-Real-IP=$remote_addr,X-Forwarded-For=$proxy_add_x_forwarded_for,Cookie=$http_cookie}
+  headers = {X-From = "Netlify",Host=$host, X-Real-IP=$remote_addr,X-Forwarded-For=$proxy_add_x_forwarded_for,Set-cookie=$http_cookie}
   signed = "API_SIGNATURE_TOKEN"
